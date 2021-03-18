@@ -1,0 +1,9 @@
+<thead>
+  <tr>
+    <th>Markalar</th>
+  </tr>
+</thead>
+<ul class="list-group">
+  <li (click)="setCurrentBrand(brand)" *ngFor="let brand of brands" 
+  class="list-group-item">{{brand.brandName}}</li>
+</ul>

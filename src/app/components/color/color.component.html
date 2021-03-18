@@ -1,0 +1,9 @@
+<thead>
+    <tr>
+      <th>Renkler</th>
+    </tr>
+  </thead>
+  <ul class="list-group">
+    <li (click)="setCurrentColor(color)" *ngFor="let color of colors" 
+    class="list-group-item">{{color.colorName}}</li>
+  </ul>
