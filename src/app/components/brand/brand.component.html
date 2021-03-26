@@ -4,15 +4,14 @@
   </tr>
 </thead>
 <ul class="list-group">
-  <li [class]="getAllBrandClass()" routerlink="/cars">Tüm ürünler</li>
+  <li [class]="getAllBrandClass()" routerLink="/cars">Tüm ürünler</li>
   <li
     (click)="setCurrentBrand(brand)"
-    routerlink="/cars/brand/{{ brand.brandId }}"
+    routerLink="/cars/brand/{{brand.id}}"
     *ngFor="let brand of brands"
     [class]="getCurrentBrandClass(brand)"
   >
-    {{ brand.brandName }}
+    {{ brand.brandName | uppercase}}
   </li>
 </ul>
 
-<h5 *ngif="currentBrand">{{ currentBrand.brandName }} seçtiniz</h5>

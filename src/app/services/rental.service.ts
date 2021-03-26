@@ -8,7 +8,7 @@ import { RentalDetailDto } from '../models/rentalDetailDto';
   providedIn: 'root',
 })
 export class RentalService {
-  apiUrl = 'https://localhost:44327/api/rental/getall';
+  apiUrl = 'https://localhost:44327/api/rentals/getall';
 
   constructor(private httpClient: HttpClient) {}
 

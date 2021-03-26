@@ -8,7 +8,7 @@ import { ListResponseModel } from '../models/listResponseModel';
   providedIn: 'root',
 })
 export class CustomerService {
-  apiUrl = 'https://localhost:44327/api/customer/getall';
+  apiUrl = 'https://localhost:44327/api/customers/getall';
 
   constructor(private httpClient: HttpClient) {}
 

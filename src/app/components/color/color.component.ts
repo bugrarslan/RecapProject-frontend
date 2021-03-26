@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { timeStamp } from 'node:console';
 import { Color } from 'src/app/models/color';
 import { ColorService } from 'src/app/services/color.service';
 
@@ -29,7 +28,7 @@ export class ColorComponent implements OnInit {
   }
 
   getCurrentColorClass(brand: Color) {
-    if ((brand = this.currentColor)) {
+    if (brand == this.currentColor) {
       return 'list-group-item active';
     } else {
       return 'list-group-item';

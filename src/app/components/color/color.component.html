@@ -6,12 +6,11 @@
 <ul class="list-group">
   <li
     (click)="setCurrentColor(color)"
-    routerlink = "/cars/brand/{{color.colorId}}"
+    routerLink = "/cars/color/{{color.id}}"
     *ngFor="let color of colors"
     [class]="getCurrentColorClass(color)"
   >
-    {{ color.colorName }}
+    {{color.colorName | uppercase}}
   </li>
 </ul>
 
-<h5 *ngif="currentColor">{{ setCurrentColor.colorName }} seçtiniz</h5>
